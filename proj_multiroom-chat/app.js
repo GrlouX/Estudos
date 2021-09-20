@@ -20,7 +20,7 @@ io.on('connection', function(socket){
 
 	socket.on('msgParaServidor', function(data){
 
-		/* dialogo */
+		/* diálogo */
 		socket.emit(
 			'msgParaCliente', 
 			{apelido: data.apelido, mensagem: data.mensagem}
